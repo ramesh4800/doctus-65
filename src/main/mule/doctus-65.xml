@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="doctus-65Flow" doc:id="40020e17-7cf3-430e-b709-b9cddb58ac4b" >
 		<http:listener doc:name="Listener" doc:id="46e96462-d980-4c47-82d7-d2bca31704da" config-ref="HTTP_Listener_config" path="/test"/>
 		<logger level="INFO" doc:name="Logger" doc:id="a42d8aa2-379a-43f4-9d12-bc1746f54f3e" message="in application"/>
+		<set-payload value="doctus-65" doc:name="Set Payload" doc:id="ab41bc84-1a58-400f-9095-95e607d8f024" />
 	</flow>
 </mule>
